@@ -3,7 +3,7 @@ function App () {
   const estilosBotao = {marginTop: 12, paddingTop: 8, paddingBottom: 8, backgroundColor: 'blueviolet', color: 'white', border: 'none', width: '100%', borderRadius: 8}
   const textoDoRotulo = 'Nome:'
   const obterTextoDoBotao = () => 'Enviar'
-  const aoClicarNoBotao = () => alert('CLicou')
+  const aoClicarNoBotao = () => alert('Clicou')
   return(
     <div
     style={{margin: 'auto', width: 768, backgroundColor: '#EEE', padding: 12, borderRadius: 8 }}>
@@ -20,7 +20,7 @@ function App () {
     <button
     onClick={() =>oClicarNoBotao()}
       style={estilosBotao}>
-      (obterTextoDoBotao())
+      {obterTextoDoBotao()}
     </button>
     </div>
   )
